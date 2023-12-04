@@ -12,14 +12,8 @@ const positionLong = 7;
   разностей координат по каждой оси. 
 */
 
-const distanceLat = 
-  (addressLat > positionLat) 
-  ? addressLat - positionLat 
-  : positionLat - addressLat;
-const distanceLong = 
-  (addressLong > positionLong) 
-  ? addressLong - positionLong 
-  : positionLong - addressLong;
+const distanceLat = addressLat - positionLat;
+const distanceLong = addressLong - positionLong;
 
 const result = Math.sqrt(Math.pow(distanceLat, 2) + Math.pow(distanceLong, 2));
 console.log(result);
